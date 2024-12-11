@@ -1,0 +1,96 @@
+.submit-symptoms-container {
+width: 85vh;
+height: 65vh; /* Set the height to 60vh */
+margin-left: -230px;
+margin-top: 30px;
+padding: 20px;
+background-color: #f9f9f9;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+border-radius: 8px;
+display: flex;
+flex-direction: column;
+justify-content: space-between; /* Adjust the elements to match the height */
+}
+
+.submit-symptoms-header {
+text-align: center;
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+top: 120px;
+font-size: 40px;
+font-family: Roboto;
+color: blue;
+}
+
+.heartbeat-icon {
+margin-right: 10px;
+color: red;
+}
+
+.form-group {
+margin-bottom: 15px;
+flex-grow: 1; /* Allow the form groups to grow and fill the space */
+}
+
+.form-group label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+.form-group textarea {
+width: 95%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+resize: vertical;
+height: calc(50% - 40px); /* Adjust the height to fill the available space */
+}
+
+button {
+display: block;
+width: 100%;
+padding: 10px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+.name-paragraph-1 {
+    margin: 0;
+}
+
+.name-header-1 {
+    position: relative;
+    left: 60%;
+    right: 50%;
+    transform: translateX(-50%);
+    top: -80px;
+    font-size: 40px;
+    font-family: Verdana, sans-serif;
+    color: darkred;
+    margin: 0;
+
+}
+
+.tagline-1 {
+    position: relative;
+    left: 80%;
+    right: 50%;
+    transform: translateX(-50%);
+    top: -100px;
+    font-size: 20px;
+    font-family: Roboto;
+    color: rgb(122, 114, 114);
+    margin: 0;
+}

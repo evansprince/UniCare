@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow-x: hidden; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.name-div {
+    position: absolute;
+    top: 80px; /* 30px from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for the element's width */
+    text-align: center;
+    background-color: rgb(128, 128, 128, 0.5);
+    padding: 0px 10px;
+    border-radius: 10px;
+  
+}
+
+h1 {
+  font-size: 60px;
+  color: rgb(47, 4, 4);
+  font-family: Times New Roman;
+}
+
+p{
+  margin: 0px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: Roboto;
+}
+
+.tagline{
+  color: rgb(9, 44, 15);
+}
+
+@media (max-width: 768px) {
+  .name-container,
+  .name-div {
+    width: 80%;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .name-container,
+  .name-div {
+    width: 90%;
+  }
+}

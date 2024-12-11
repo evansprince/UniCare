@@ -1,0 +1,60 @@
+.name-container {
+position: absolute;
+top: 62%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: rgba(240, 240, 240, 0.8); /* Optional: Add a semi-transparent background color */
+
+}
+
+.name-box {
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+text-align: center;
+width: 300px;
+margin-bottom: 100px;
+
+}
+
+.h1SignIn {
+    margin: 0;
+    font-family: Arial;
+    font-size: 25px;
+
+}
+
+.input-field {
+display: block;
+width: 90%;
+padding: 10px;
+padding-right: 20px; /* Add padding to the right side */
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.submit-button {
+background-color: #007bff;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: green;
+    transition: 0.2s;
+}
+
+.signup-text {
+margin-top: 20px;
+}
+
+.signup-link {
+color: #0f1317;
+text-decoration: none;
+}

@@ -1,0 +1,327 @@
+.profile-container {
+width: 35vh; /* 1/3 of the width */
+height: 100%; /* 1/2 of the height */
+background-color: rgb(220, 219, 235);
+text-align: center;
+margin: 0; /* Remove margin to align at the top left corner */
+padding: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for better visibility */
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+align-items: center;
+position: absolute; /* Position it absolutely */
+top: 0; /* Align at the top */
+left: 0; /* Align at the left */
+z-index: 10;
+box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+.profile-container {
+  width: 100%;
+  position: static;
+}
+}
+
+.profile-picture {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background-color: #ccc;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+margin: 0 auto 10px auto;
+position: relative; /* Position relative to place the + symbol */
+}
+
+.profile-picture img {
+width: 100%;
+height: 100%;
+object-fit: cover; /* Ensure the image covers the container */
+border-radius: 50%; /* Ensure the image itself is round */
+}
+
+.upload-text {
+position: absolute;
+top: 5px; /* Position the text at the top */
+font-size: 10px; /* Set the font size to px */
+color: #000; /* Set the text color */
+}
+
+.file-upload {
+position: absolute;
+bottom: 33px;
+right: 37px;
+background-color: #007bff;
+color: white;
+border-radius: 50%;
+width: 24px;
+height: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+font-size: 18px;
+line-height: 24px;
+z-index: 9999;
+}
+
+.file-upload input[type="file"] {
+display: none; /* Hide the actual file input */
+}
+
+.profile-info {
+margin-top: 0px; /* Adjust the margin to bring the name and ID closer */
+}
+
+.profile-buttons {
+display: flex;
+flex-direction: column;
+gap: 20px;
+margin-top: 20px;
+}
+
+.profile-buttons button {
+background-color: brown;
+color: rgb(255, 255, 0, 0.8);
+font-size: 18px;
+font-family: Roboto;
+font-weight: 700;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.profile-buttons button:hover {
+background-color: rgb(57, 5, 5, 0.8);
+}
+
+.name-header {
+margin: 0;
+color: rgb(255, 255, 0, 0.8);
+}
+
+.id-paragraph {
+margin: 0;
+color: rgb(255, 255, 0, 0.8);
+}
+
+.search-form {
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.search-input {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+width: 95%;
+margin-bottom: 10px;
+}
+
+.search-button {
+padding: 10px 20px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+width: 95%;
+}
+
+.search-button:hover {
+background-color: #0056b3;
+}
+
+.suggestions-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 200px;
+background-color: white;
+border: 1px solid #ccc;
+border-radius: 4px;
+max-height: 150px;
+overflow-y: auto;
+}
+
+.suggestions-list li {
+padding: 10px;
+cursor: pointer;
+}
+
+.suggestions-list li:hover {
+background-color: #f1f1f1;
+}
+
+.messages-container {
+margin-top: 20px;
+width: 100%;
+text-align: left;
+}
+
+.messages-container h3 {
+margin-bottom: 10px;
+}
+
+.messages-container p {
+background-color: #f1f1f1;
+padding: 10px;
+border-radius: 4px;
+}
+
+.back-button {
+margin-top: 10px;
+padding: 10px 20px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.back-button:hover {
+background-color: #0056b3;
+}
+
+.emergency-contacts-container {
+margin-top: 20px;
+width: 100%;
+text-align: left;
+}
+
+.emergency-contacts-container h3 {
+margin-bottom: 10px;
+}
+
+.emergency-contacts-container ul {
+list-style-type: none;
+padding: 0;
+}
+
+.emergency-contacts-container li {
+background-color: #f1f1f1;
+padding: 10px;
+border-radius: 4px;
+margin-bottom: 5px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.add-button {
+margin-top: 10px;
+padding: 10px 20px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.add-button:hover {
+background-color: #0056b3;
+}
+
+.delete-button {
+margin-left: 10px;
+padding: 5px 10px;
+background-color: #ff4d4d;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.delete-button:hover {
+background-color: #cc0000;
+}
+
+.medical-history-container {
+margin-top: 20px;
+width: 100%;
+text-align: left;
+}
+
+.medical-history-container h3 {
+margin-bottom: 10px;
+}
+
+.medical-history-container p {
+background-color: #f1f1f1;
+padding: 10px;
+border-radius: 4px;
+}
+
+.settings-container {
+margin-top: 20px;
+width: 100%;
+text-align: left;
+}
+
+.settings-container h3 {
+margin-bottom: 10px;
+}
+
+.settings-form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.settings-form label {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.settings-form input {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+width: 100%;
+}
+
+.faqs-container {
+margin-top: 20px;
+width: 100%;
+text-align: left;
+}
+
+.faqs-container h3 {
+margin-bottom: 10px;
+}
+
+.faqs-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+max-height: 150px;
+overflow-y: auto;
+}
+
+.faqs-list li {
+background-color: #f1f1f1;
+padding: 10px;
+border-radius: 4px;
+margin-bottom: 5px;
+cursor: pointer;
+}
+
+.faqs-list li:hover {
+background-color: #e0e0e0;
+}
+
+.faq-answer {
+margin-top: 10px;
+background-color: #f1f1f1;
+padding: 10px;
+border-radius: 4px;
+}
